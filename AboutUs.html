@@ -27,38 +27,35 @@ only screen and (min-device-pixel-ratio: 1.5){
 
 
 body {
+	width:100%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-	margin-right: 0px;
-	margin-right: 0px;
 	overflow-x: hidden;
 }
 
 .main {
+	width:70%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 25px;
     padding: 25px;
 	float: center;
-    margin-right: 0px;
-	margin-left: 150px;
 	overflow-x: hidden;
 	
 }
 
 .mainheader {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lucida Sans Unicode;
     margin: 10px;
     padding: 10px;
 	float: center;
 	text-allign: center;
-	margin-right: 50px;
-	margin-left: 50px;
-	width: 90%
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
 	overflow-x: hidden;
 }
 
-/* Style the header */
 .header {
     padding: 20px;
     text-align: center;
@@ -66,18 +63,23 @@ body {
     color: white;
 }
 
-/* Increase the font size of the h1 element */
 .header h1 {
     font-size: 40px;
 }
 
-/* Style the top navigation bar */
+
+.header h2 {
+    font-size: 30px;
+}
+.header h3 {
+    font-size: 20px;
+}
+
 .navbar {
     overflow: hidden;
     background-color: #383838;
 }
 
-/* Style the navigation bar links */
 .navbar a {
     float: left;
     display: block;
@@ -87,12 +89,10 @@ body {
     text-decoration: none;
 }
 
-/* Right-aligned link */
 .navbar a.right {
     float: right;
 }
 
-/* Change color on hover */
 .navbar a:hover {
     background-color: #595959;
     color: black;
@@ -130,8 +130,8 @@ body {
 <body>
 
 <div class="header">
-  <h1>Media Website Test</h1>
-  <p>Hopefully you can see this... 98423</p>
+  <h1>The Primary Archive</h1>
+  <p>A growing collection of audio drama content!</p>
 </div>
 
 <div class="navbar">
@@ -151,8 +151,8 @@ body {
 </div>
 
 <div class="mainheader">
-  <h1>About "Media Test Website"</h1>
-  <p>We are trying to unify audio drama into a single cohesive platform! TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST </p>
+  <h2 style="text-align:center">About The Primary Archive</h1>
+  <h3 style="text-align:left">We are trying to unify audio drama into a single cohesive platform! Our primary goal is to acumulate audio drama content and organize it into an easy to access platform. The other priorities of The Primary Archive are to provide a streamlined experience with as few resources used. Did you know that our average page size is 15x smaller than your average podcast's website? It also allows our simplistic design to prosper on mobile devices with spotty connections and old machines with slow processors!</h2>
 </div>
 
 </body>

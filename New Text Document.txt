@@ -1,0 +1,14 @@
+var quotes = [
+		'A growing collection of audio drama content!',
+		'A small step towards a better platform!',
+		'Home to a staggering zero unique podcasts!',
+		'Designed with your safety as the second concern!',
+		'Welcome to the least processor-taxing website!',
+		'The last stop before the dark web.',
+		'Check out our top rated podcasts!',
+		'A website so simple your microwave could run it!',
+		'Archives of archives of archives of archives!'
+]
+function newQuote() {
+	var randomNumber = Math.floor(Math.random() * (quotes.length));
+	document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
