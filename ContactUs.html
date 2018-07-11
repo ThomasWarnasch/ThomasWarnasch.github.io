@@ -124,8 +124,11 @@ body {
   <a href="RequestAPodcast.html" class="right">Request a podcast</a>
   
   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
+    <form method="get" action="http://www.google.com/search">
+		
+	<input name="sitesearch" type="hidden" value="thomaswarnasch.github.io/">
+	<input autocomplete="on" name="q" placeholder="Search..." required="required"  type="text">
+
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>

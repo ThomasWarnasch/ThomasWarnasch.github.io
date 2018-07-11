@@ -111,9 +111,9 @@ body {
 
 .navbar .search-container button {
   float: right;
-  padding: 6px 10px;
+  padding: 6px 8px;
   margin-top: 8px;
-  margin-right: 9px;
+  margin-right: 4px;
   background: #5d5d5d;
   font-size: 10px;
   border: none;
@@ -142,8 +142,11 @@ body {
   <a href="RequestAPodcast.html" class="right">Request a podcast</a>
   
   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
+    <form method="get" action="http://www.google.com/search">
+		
+	<input name="sitesearch" type="hidden" value="thomaswarnasch.github.io/">
+	<input autocomplete="on" name="q" placeholder="Search..." required="required"  type="text">
+
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
   </div>
