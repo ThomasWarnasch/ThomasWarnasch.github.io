@@ -17,6 +17,7 @@ body {
     margin: 0px;
     padding: 0px;
 	overflow-x: hidden;
+	background: #CFCFCF;
 }
 
 .main {
@@ -126,8 +127,33 @@ body {
 #border {
     border-radius: 25px;
     background: #ECECEC;
-    padding: 20px;    
+    padding: 20px;
 }
+
+#fade {
+  position:relative;
+  height:auto;
+  width:auto;
+  margin:0 auto;
+}
+
+#fade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#fade img.top:hover {
+  opacity:0;
+}
+#fadein img.bottom:hover {
+  opacity:1;
+}
+
+
 </style>
 </head>
 <body>
@@ -158,7 +184,7 @@ body {
 <div class="mainheader">
   <h1>Here are some examples of how you could have your content show up</h1>
   <p> The differences are whether the content is directly hosted off of The Primary Archive's server, if the 'listen' button purely redirects to your website, or a combination of the two. </p>
-  </div>
+</div>
   
   
 <div class="main" id="border">
@@ -180,8 +206,24 @@ body {
   <a href="FakePodcast/FakePodcast.html" class="button">Listen on The Primary Archive</a>
 </div>
 
+<div class="mainheader">
+  <h1>Now here's some real content.</h1>
+  <p></p>
+</div>
 
-
+<div class="main" id="border">
+  <h1>WZED</h1>
+  <p>WZED is about Alice Riley, a radio host who broadcasts her experiences surrounding a recent outbreak that marks the beginning of the zombie apocalypse. Listen in as the events surrounding the outbreak turn from bad to worse!</p>
+  <a href="https://wzedpodcast.tumblr.com/" class="button">View WZED's website</a>
+  <a href="WZED/WZED.html" class="button">Listen on The Primary Archive</a>
+  <a href="https://soundcloud.com/wzedpodcast">
+  <div id="fade" id="fadein">
+    <img class="bottom" src="Soundcloud_Bottom.png">
+	<img class="top" src="Soundcloud_Top.png">
+	</a>
+	<p>&emsp; </p>
+  </div>
+</div>
 
 </body>
 </html>
