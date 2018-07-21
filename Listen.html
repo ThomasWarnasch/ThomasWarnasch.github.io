@@ -186,7 +186,7 @@ a:link, a:visited, a:hover, a:active { color: white }
   <p>A growing collection of audio drama content!</p>
 </div>
 
-<div class="navbar">
+<div class="navbar" id="ScrollingNavbar">
   <a href="AboutUs.html">About Us</a>
   <a href="Listen.html">Listen</a>
   <a href="Reccomended.html">Reccomended</a>
@@ -206,12 +206,12 @@ a:link, a:visited, a:hover, a:active { color: white }
 </div>
 
 <div class="mainheader">
-  <h1>Now here's some real content.</h1>
+  <h1>Content by date archived.</h1>
   <p></p>
 </div>
 
 <div class="main" id="border">
-  <h1>WZED</h1>
+  <h1>WZED</h1> 
   <p>WZED is about Alice Riley, a radio host who broadcasts her experiences surrounding a recent outbreak that marks the beginning of the zombie apocalypse. Listen in as the events surrounding the outbreak turn from bad to worse!</p>
   <a href="https://wzedpodcast.tumblr.com/" class="button">View WZED's website</a>
   <a href="WZED/WZED.html" class="button">Listen on The Primary Archive</a>
@@ -250,6 +250,8 @@ a:link, a:visited, a:hover, a:active { color: white }
 	<div class="tagright" id="tags" style="margin-top:6px"><a href="TAGS/PhantomGlitchPodcasts.html" style="text-decoration: none;">Phantom Glitch Podcasts</a></div>
 	<div class="tagright" id="tags" style="margin-top:6px"><a href="TAGS/Apocalypse_Apocalyptic.html" style="text-decoration: none;">Apocalypse/Apocalyptic</a></div>
 	<div class="tagright" id="tags" style="margin-top:6px"><a href="TAGS/PG13.html" style="text-decoration: none;">PG-13*</a></div>
+	<p>&emsp; </p>
+	<p style="font-size: 12px;">Date added: July 11, 2018 </p>
 </div>
 
 
@@ -278,6 +280,29 @@ a:link, a:visited, a:hover, a:active { color: white }
   <a href="FakePodcast/FakePodcast.html" class="button">Listen on The Primary Archive</a>
 </div>
 
+<div class="main" id="border">
+  <h1>Fake Podcast!</h1>
+  <p>A short summary of the series would belong here. The adventures of web development!</p>
+  <a class="button" ><strong>Not yet available.</strong></a>
+</div>
+
+
+<!-- Can be implemented if JS is enabled
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("ScrollingNavbar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+-->
 
 
 </body>
