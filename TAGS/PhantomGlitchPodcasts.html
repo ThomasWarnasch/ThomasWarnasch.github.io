@@ -32,9 +32,6 @@ body {
 	
 }
 
-
-
-
 .mainheader {
     font-family: Arial, Helvetica, sans-serif;
     margin: 10px;
@@ -46,6 +43,29 @@ body {
 	margin-right: auto;
 	overflow-x: hidden;
 }
+
+
+.imageformat {
+    font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 360px;
+	margin-left: 0%;
+	margin-right: 0%;
+	overflow-x: hidden;
+	
+}
+
+.buttongroup {
+    font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	overflow-x: hidden;
+	height: 370px;
+}
+
+
 
 /* Style the header */
 .header {
@@ -118,15 +138,22 @@ body {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
+	border-radius: 4px;
+	border: 2px solid #4CAF50;
+	-webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
 }
-
+.button:hover {
+    background-color: #81c784;
+    color: black;
+}
 #border {
     border-radius: 25px;
     background: #ECECEC;
@@ -135,19 +162,38 @@ body {
 
 #tags {
     border-radius: 12px;
-    background: #b65353;
     padding: 6px; 
 	margin:4px;
 	font-size: 12px;
 	line-height: 100%;
 	cursor: pointer;
 	text-decoration: none;
-	
+	background-color: #c57c7c;
+    color: white;
 }
 
-.tagleft{display:inline-block;float:left; font-family: Arial, Helvetica, sans-serif; line-height: 0%;}
-.tagright{display:inline-block; float:left; font-family: Arial, Helvetica, sans-serif;}
+#tags a:hover {
+    color: black;
+}
 
+.tagleft{
+display:inline-block;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 0%;
+}
+
+
+
+
+.tagright{
+display:inline-block;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+border: 2px solid #c57c7c;
+}
 
 a:link, a:visited, a:hover, a:active { color: white }
 	
@@ -175,6 +221,7 @@ a:link, a:visited, a:hover, a:active { color: white }
 #fadein img.bottom:hover {
   opacity:1;
 }
+
 
 
 </style>
@@ -211,47 +258,57 @@ a:link, a:visited, a:hover, a:active { color: white }
 </div>
 
 <div class="main" id="border">
-  <h1>WZED</h1>
+<div class="buttongroup">
+	<div class="imageformat" id="border">
+		<img style="border: 4px solid #b55757;" src="../ICONS/WZED.png" alt="WZED" width="100%" height="auto" align="left">
+		
+	</div>
+	
+  <h1>WZED</h1> 
   <p>WZED is about Alice Riley, a radio host who broadcasts her experiences surrounding a recent outbreak that marks the beginning of the zombie apocalypse. Listen in as the events surrounding the outbreak turn from bad to worse!</p>
-  <a href="https://wzedpodcast.tumblr.com/" class="button">View WZED's website</a>
-  <a href="../WZED/WZED.html" class="button">Listen on The Primary Archive</a>
   
-  <a href="https://soundcloud.com/wzedpodcast">
-  <div id="fade" id="fadein">
+  <a style="margin-top:12px" href="https://wzedpodcast.tumblr.com/" class="button">View WZED's website</a>
+  <a style="margin-top:12px" href="WZED/WZED.html" class="button">Listen on The Primary Archive</a>
+  
+  <div>
+	<a href="https://soundcloud.com/wzedpodcast">
+  <div style="left:370px"  id="fade" id="fadein">
     <img class="bottom" src="../Soundcloud_Bottom.png">
 	<img class="top" src="../Soundcloud_Top.png">
 	</div>
   </a>
   
   <a  href="https://itunes.apple.com/us/podcast/wzed/id1396849168">
-  <div style="left:64px" id="fade" id="fadein">
+  <div style="left:434px" id="fade" id="fadein">
     <img class="bottom" src="../Itunes_bottom.png">
 	<img class="top" src="../Itunes_top.png">
 	</div>
   </a>
   
   <a  href="https://www.stitcher.com/podcast/wzed">
-  <div style="left:128px" id="fade" id="fadein">
+  <div style="left:498px" id="fade" id="fadein">
     <img class="bottom" src="../Stitcher_bottom.png">
 	<img class="top" src="../Stitcher_top.png">
 	</div>
   </a>
   
    <a  href="https://www.youtube.com/channel/UCUm8BGpH0D-ujEc0YpZn3kA">
-  <div style="left:192px" id="fade" id="fadein">
+  <div style="left:562px" id="fade" id="fadein">
     <img class="bottom" src="../Youtube_bottom.png">
 	<img class="top" src="../Youtube_top.png">
 	</div>
   </a>
+  </div>
   
 	<p>&emsp; </p>
-	<p>&emsp; </p>
 	<div class="tagleft"> <p>Tags: </p> </div>
-	<div class="tagright" id="tags" style="margin-top:6px"><a href="../TAGS/PhantomGlitchPodcasts.html" style="text-decoration: none;">Phantom Glitch Podcasts</a></div>
-	<div class="tagright" id="tags" style="margin-top:6px"><a href="../TAGS/Apocalypse_Apocalyptic.html" style="text-decoration: none;">Apocalypse/Apocalyptic</a></div>
-	<div class="tagright" id="tags" style="margin-top:6px"><a href="../TAGS/PG13.html" style="text-decoration: none;">PG-13*</a></div>
-	<p>&emsp; </p>
-	<p style="font-size: 12px;">Date added: July 11, 2018 </p>
+	<div class="tagright" id="tags" style="margin-top:3px"><a href="../TAGS/PhantomGlitchPodcasts.html" style="text-decoration: none;">Phantom Glitch Podcasts</a></div>
+	<div class="tagright button" id="tags" style="margin-top:3px"><a href="../TAGS/Apocalypse_Apocalyptic.html" style="text-decoration: none;">Apocalypse/Apocalyptic</a></div>
+	<div class="tagright button" id="tags" style="margin-top:3px"><a href="../TAGS/PG13.html" style="text-decoration: none;">PG-13*</a></div>
+
+	<p style="font-size: 12px; "><br/>Date added: July 11, 2018 </p>
+	
+</div>
 </div>
 </body>
 </html>
