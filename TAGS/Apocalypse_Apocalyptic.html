@@ -11,6 +11,19 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 1160px) {
+  div.imageformat {
+    width:150px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  div.main {
+    width:95%;
+  }
+}
+
+
 body {
 	width:100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -37,7 +50,7 @@ body {
     margin: 10px;
     padding: 10px;
 	float: center;
-	text-allign: center;
+	text-align: center;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -48,7 +61,7 @@ body {
 .imageformat {
     font-family: Arial, Helvetica, sans-serif;
 	float: left;
-	width: 360px;
+	width: 20%;
 	margin-left: 0%;
 	margin-right: 0%;
 	overflow-x: hidden;
@@ -62,7 +75,8 @@ body {
 	margin-left: 0%;
 	margin-right: 0%;
 	overflow-x: hidden;
-	height: 370px;
+	height: 25%;
+	text-align: left;
 }
 
 
@@ -84,6 +98,34 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #383838;
+}
+
+
+
+@media screen and (max-width: 1160px) {
+  div.navbar a{
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 1160px) {
+  div.navbar input[type=text]{
+	padding: 3px;
+  margin-top: 8px;
+  font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+	div.navbar .search-container button {
+	  float: right;
+	  padding: 5px 8px;
+	  margin-top: 8px;
+	  margin-right: 4px;
+	  background: #5d5d5d;
+	  font-size: 8px;
+	  border: none;
+	  cursor: pointer;
+	}
 }
 
 /* Style the navigation bar links */
@@ -154,6 +196,39 @@ body {
     background-color: #81c784;
     color: black;
 }
+
+@media screen and (min-width: 1400px) {
+  div.buttonA {
+left:20%;
+}
+.buttonB {
+left:25%;
+}
+.buttonC {
+left:30%;
+}
+.buttonD {
+left:35%;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  div.buttonA {
+left:0px;
+}
+.buttonB {
+left:64px;
+}
+.buttonC {
+left:128px;
+}
+.buttonD {
+left:192px;
+}
+}
+
+
+
 #border {
     border-radius: 25px;
     background: #ECECEC;
@@ -269,30 +344,30 @@ a:link, a:visited, a:hover, a:active { color: white }
   <a style="margin-top:12px" href="https://wzedpodcast.tumblr.com/" class="button">View WZED's website</a>
   <a style="margin-top:12px" href="../WZED/WZED.html" class="button">Listen on The Primary Archive</a>
   
-  <div>
+    <div>
 	<a href="https://soundcloud.com/wzedpodcast">
-  <div style="left:370px"  id="fade" id="fadein">
+  <div class="buttonA" id="fade" id="fadein">
     <img class="bottom" src="../Soundcloud_Bottom.png">
 	<img class="top" src="../Soundcloud_Top.png">
 	</div>
   </a>
   
   <a  href="https://itunes.apple.com/us/podcast/wzed/id1396849168">
-  <div style="left:434px" id="fade" id="fadein">
+  <div class="buttonB" id="fade" id="fadein">
     <img class="bottom" src="../Itunes_bottom.png">
 	<img class="top" src="../Itunes_top.png">
 	</div>
   </a>
   
   <a  href="https://www.stitcher.com/podcast/wzed">
-  <div style="left:498px" id="fade" id="fadein">
+  <div class="buttonC" id="fade" id="fadein">
     <img class="bottom" src="../Stitcher_bottom.png">
 	<img class="top" src="../Stitcher_top.png">
 	</div>
   </a>
   
    <a  href="https://www.youtube.com/channel/UCUm8BGpH0D-ujEc0YpZn3kA">
-  <div style="left:562px" id="fade" id="fadein">
+  <div class="buttonD" id="fade" id="fadein">
     <img class="bottom" src="../Youtube_bottom.png">
 	<img class="top" src="../Youtube_top.png">
 	</div>
