@@ -6,9 +6,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 * {
     box-sizing: border-box;
 }
+
+@media screen and (max-width: 1160px) {
+  div.imageformat {
+    width:150px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  div.main {
+    width:95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  div.main {
+    width:99%;
+  }
+}
+
+
 
 body {
 	width:100%;
@@ -16,14 +37,17 @@ body {
     margin: 0px;
     padding: 0px;
 	overflow-x: hidden;
+	background: #CFCFCF;
 }
 
 .main {
-	width:70%;
     font-family: Arial, Helvetica, sans-serif;
     margin: 25px;
     padding: 25px;
 	float: center;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
 	overflow-x: hidden;
 	
 }
@@ -33,12 +57,36 @@ body {
     margin: 10px;
     padding: 10px;
 	float: center;
-	text-allign: center;
+	text-align: center;
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	overflow-x: hidden;
 }
+
+
+.imageformat {
+    font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 20%;
+	margin-left: 0%;
+	margin-right: 0%;
+	overflow-x: hidden;
+	
+}
+
+.buttongroup {
+    font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	width: 100%;
+	margin-left: 0%;
+	margin-right: 0%;
+	overflow-x: hidden;
+	height: 25%;
+	text-align: left;
+}
+
+
 
 /* Style the header */
 .header {
@@ -57,6 +105,68 @@ body {
 .navbar {
     overflow: hidden;
     background-color: #383838;
+}
+
+
+
+@media screen and (max-width: 1160px) {
+  div.navbar a{
+    padding: 8px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 1160px) {
+  div.navbar input[type=text]{
+	padding: 3px;
+  margin-top: 8px;
+  font-size: 10px;
+  }
+}
+
+
+
+@media screen and (max-width: 1160px) {
+	div.navbar .search-container button {
+	  float: right;
+	  padding: 5px 8px;
+	  margin-top: 8px;
+	  margin-right: 4px;
+	  background: #5d5d5d;
+	  font-size: 8px;
+	  border: none;
+	  cursor: pointer;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+  div.navbar a{
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.navbar input[type=text]{
+	padding: 2px;
+  margin-top: 6px;
+  font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+	div.navbar .search-container button {
+	  float: right;
+	  padding: 4px 6px;
+	  margin-top: 6px;
+	  margin-right: 3px;
+	  background: #5d5d5d;
+	  font-size: 6px;
+	  border: none;
+	  cursor: pointer;
+	}
 }
 
 /* Style the navigation bar links */
@@ -104,6 +214,128 @@ body {
 
 .navbar .search-container button:hover {
   background: #ccc;
+}
+
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 4px;
+	border: 2px solid #4CAF50;
+	-webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.button:hover {
+    background-color: #81c784;
+    color: black;
+}
+
+@media screen and (min-width: 1400px) {
+  div.buttonA {
+left:20%;
+}
+.buttonB {
+left:25%;
+}
+.buttonC {
+left:30%;
+}
+.buttonD {
+left:35%;
+}
+}
+
+@media screen and (max-width: 1400px) {
+  div.buttonA {
+left:0px;
+}
+.buttonB {
+left:64px;
+}
+.buttonC {
+left:128px;
+}
+.buttonD {
+left:192px;
+}
+}
+
+
+
+#border {
+    border-radius: 25px;
+    background: #ECECEC;
+    padding: 20px;
+}
+
+#tags {
+    border-radius: 12px;
+    padding: 6px; 
+	margin:4px;
+	font-size: 12px;
+	line-height: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #c57c7c;
+    color: white;
+}
+
+#tags a:hover {
+    color: black;
+}
+
+.tagleft{
+display:inline-block;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 0%;
+}
+
+
+
+
+.tagright{
+display:inline-block;
+float:left;
+font-family: Arial, Helvetica, sans-serif;
+-webkit-transition-duration: 0.5s;
+transition-duration: 0.5s;
+border: 2px solid #c57c7c;
+}
+
+a:link, a:visited, a:hover, a:active { color: white }
+	
+
+
+#fade {
+  position:relative;
+  height:auto;
+  width:auto;
+  margin:0 auto;
+}
+
+#fade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#fade img.top:hover {
+  opacity:0;
+}
+#fadein img.bottom:hover {
+  opacity:1;
 }
 
 
